@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Awesome ChatGPT Prompts</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Awesome ChatGPT Prompts</h1>
+    <form method="get">
+        <input type="text" name="q" placeholder="Search" value="{{ query }}">
+        <label>
+            <input type="checkbox" name="dev" value="1" {% if dev_only %}checked{% endif %}>
+            Developer only
+        </label>
+        <button type="submit">Search</button>
+    </form>
+    <ul class="prompt-list">
+        {% for p in prompts %}
+            <li>
+                <strong>{{ p.act }}</strong><br>
+                <span>{{ p.prompt }}</span>
+            </li>
+        {% else %}
+            <li>No prompts found.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

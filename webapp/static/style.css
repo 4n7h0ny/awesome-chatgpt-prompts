@@ -1,0 +1,6 @@
+body { font-family: Arial, sans-serif; margin: 2rem; }
+h1 { color: #333; }
+form { margin-bottom: 1rem; }
+.prompt-list { list-style: none; padding: 0; }
+.prompt-list li { margin-bottom: 1.2rem; }
+.prompt-list strong { font-size: 1.1rem; }
