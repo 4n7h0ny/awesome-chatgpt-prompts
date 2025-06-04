@@ -91,6 +91,17 @@ prompts on the site to fit your specific needs and preferences.
 
 <img width="1400" alt="Screenshot 2025-01-05 at 22 17 19" src="https://github.com/user-attachments/assets/272d2092-b651-452a-a049-f46b31c32889" />
 
+### Running the local web app
+
+This repository now includes a lightweight Flask application that lets you browse the prompts locally.
+
+```bash
+pip install -r webapp/requirements.txt
+python webapp/app.py
+```
+
+Then open <http://127.0.0.1:5000> in your browser to use the app.
+
 ---
 
 ## Unmerged Prompts
